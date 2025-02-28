@@ -1,0 +1,54 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: rgb(188, 119, 249);
+  border: 2px solid rgb(249, 63, 249);
+}
+
+#message {
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  align-self: center;
+}
+
+#action {
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+#startBtn {
+  margin-top: 2px;
+  margin-bottom: 2px;
+  padding: 4px 12px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+#startBtn:hover {
+  border: 1px solid rgb(69, 69, 239);
+  cursor: pointer;
+}
+
+input {
+  height: 25px;
+  border: 1px solid black;
+  border-radius: 4px;
+  text-indent: 5px;
+}
+
+input::placeholder {
+  color: gray;
+  font-style: italic;
+  padding-left: 3px;
+}
+
+input:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.msgTab {
+  min-width: 200px;
+}
