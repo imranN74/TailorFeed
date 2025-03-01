@@ -13,6 +13,13 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
   if (message.action === "startSearch") {
     const topic = message.topic;
     searchUrl = `https://www.youtube.com/results?search_query=${topic}`;
-    chrome.tabs.create({ url: searchUrl });
+    chrome.tabs.create({ url: searchUrl }, (tab) => {
+      setTimeout(() => {
+        chrome.scripting.executeScript({
+          target: { tabId: tab.id },
+          files: ["content.js"],
+        });
+      }, 3000);
+    });
   }
 });
