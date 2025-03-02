@@ -22,4 +22,4 @@ function watchVideo(index, totalVideos) {
   }
 }
 
-watchVideo(1, 21);
+watchVideo(1, 5);
