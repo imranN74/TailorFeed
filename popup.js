@@ -1,6 +1,6 @@
 chrome.runtime.sendMessage({ action: "checkTab" }, (response) => {
   if (response.isYoutube) {
-    document.getElementById("message").innerHTML = "Tailor Your Feed";
+    document.getElementById("message").innerHTML = "Tailor Your Youtube Feed";
     document.getElementById("action").style.display = "block";
   } else {
     document.getElementById("message").innerHTML = "Please Open Youtube Tab!";

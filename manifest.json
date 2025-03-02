@@ -1,8 +1,8 @@
 {
     "manifest_version":3,
-    "name":"TailorFeed",
+    "name":"TailorFeed : Tailor your youtube feed based on your interest",
     "version":"1.0",
-    "description": "A Chrome extension to tailor your youtube feed based on your topic interest",
+    "description": "You can tailor your youtube feed by searching your interest and wait for some minutes",
     "permissions":["scripting","storage","activeTab"],
     "host_permissions": ["https://www.youtube.com/*"],
     "background":{

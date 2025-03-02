@@ -13,7 +13,13 @@ function watchVideo(index, totalVideos) {
         }, 3000);
       }, 15000);
     }
+  } else {
+    setTimeout(() => {
+      window.location.href = "https://www.youtube.com/";
+      alert("Process Finished!");
+    }, 3000);
+    return;
   }
 }
 
-watchVideo(1, 10);
+watchVideo(1, 21);
