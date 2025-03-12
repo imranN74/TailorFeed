@@ -7,6 +7,7 @@ function watchVideo(index, totalVideos) {
     if (videoLinks.length > index) {
       videoLinks[index].click();
       setTimeout(() => {
+        likeVideo();
         window.history.back();
         setTimeout(() => {
           watchVideo(index + 1, totalVideos);
@@ -22,4 +23,15 @@ function watchVideo(index, totalVideos) {
   }
 }
 
-watchVideo(1, 5);
+watchVideo(1, 30);
+
+function likeVideo() {
+  const likeButton = document.querySelector('button[aria-label="I like this"]');
+
+  if (likeButton) {
+    likeButton.click();
+    console.log("Video Liked!");
+  } else {
+    console.error("Like button not found!");
+  }
+}
